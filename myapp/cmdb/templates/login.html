@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <form class="form-signin" action="/login/" method="POST">
+
+	{% csrf_token %}
+
+        <h2 class="form-signin-heading text-center">AOUT-SSH</h2>
+
+        <label for="username" class="sr-only">用户名</label>
+
+        <input type="text" name='username' id="id_username" class="form-control" placeholder="用户名" required autofocus>
+
+        <label for="inputPassword" class="sr-only">密码</label>
+
+        <input type="password" name='password' id="id_password" class="form-control" placeholder="密码" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+
+     </form>
+  </body>
+</html>

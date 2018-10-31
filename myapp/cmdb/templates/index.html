@@ -1,0 +1,9 @@
+<html>
+  <body>
+      <a href="/logout/"> <button type="button" class="btn" href="/login/">用户登出</button></a>
+      {% for i in user %}
+      <p>{{i.name}}</p>
+      <p>{{i.password}}</p>
+      {% endfor %}
+  </body>
+</html>
